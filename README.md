@@ -37,4 +37,4 @@ This program was created by Noah Stewart to help manage multiple Kodi apps on a 
 
 ## License
 
-The WordPress program **Parent Db for Kodi** is open-sourced software licensed under the ISC license.
+The program **Parent Db for Kodi** is open-sourced software licensed under the ISC license.
