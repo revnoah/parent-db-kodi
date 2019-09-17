@@ -1,0 +1,21 @@
+body {
+  background-color: green;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.img-thumb img {
+  max-width: 90%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#content {
+  max-width: 980px;
+  margin: 0 auto;
+}

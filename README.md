@@ -13,6 +13,12 @@ The program requires python to run and is built using the Flask framework.
 
 1. Install python and other prerequisites needed for Flask. [Install Flask](https://flask.palletsprojects.com/en/1.1.x/installation/#dependencies)
 
+### Prerequisites
+
+It may be necessary to install additional support in the operating.
+
+$ sudo apt-get install python3-pymysql
+
 ## Settings
 
 The program adds a menu item to the Settings menu. It is advisable to review and, if desired, update 
@@ -23,6 +29,14 @@ these settings after activating the program.
 This program runs a web application on a particular port, defaulting to 5000 and specified on startup. To access the web application, visit [Web Interface](http://localhost:5000)
 
 $ flask run
+
+## Troubleshooting
+
+### User Does Not Exist
+
+*mysqldump: Got error: 1449: The user specified as a definer ('kodi'@'%') does not exist when using LOCK TABLES*
+
+This error can occur if the original user used to create the database doesn't exist. You should be able to address this by creating the user at the domain specified.
 
 ## Contributing
 

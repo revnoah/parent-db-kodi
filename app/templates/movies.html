@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Movies{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    .demo-card-wide.mdl-card {
+        width: 512px;
+    }
+    .demo-card-wide > .mdl-card__title {
+        color: #fff;
+        height: 176px;
+        background-position: center;
+        background-size: scale;
+    }
+    .demo-card-wide > .mdl-card__menu {
+        color: #fff;
+    }
+    </style>
+{% endblock %}
+{% block content %}
+    <h1>Movies</h1>
+    <p class="important">
+      Let's see some movies.
+    </p>
+    <div class="cards">
+        {% for movie in movies %}
+            <div class="card card-poster col-3">
+                <div class="img img-thumb">
+                <img src="{{ movie.thumb }}" alt="{{ movie.title }}" />
+                </div>
+                <h2>{{ movie.title }}</h2>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    Get Started
+                    </a>
+                </div>
+                <div class="mdl-card__menu">
+                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">share</i>
+                    </button>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
